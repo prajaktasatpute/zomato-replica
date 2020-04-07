@@ -1,0 +1,536 @@
+@use './reset.scss';
+/* Add your css here */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.h-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.h-container .head-item-1 {
+  height: 50%;
+}
+
+.h-container .head-item-1 a {
+  color: black;
+}
+
+.h-container .head-item-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.h-container .head-item-2 ul a {
+  color: black;
+}
+
+.h-container .head-item-2 ul #nav_item_1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+
+.h-container .head-item-2 ul #nav_item_1 img {
+  height: 30px;
+  width: 30px;
+}
+
+.h-container .head-item-2 ul #nav_item_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+
+.h-container .head-item-2 ul #nav_item_2 img {
+  height: 30px;
+  width: 30px;
+}
+
+.h-container .head-item-2 ul #nav_item_3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.h-container .head-item-2 ul #nav_item_3 img {
+  height: 30px;
+  width: 30px;
+}
+
+.login-container #login-navigation {
+  margin-right: 250px;
+  float: right;
+}
+
+.login-container #login-navigation .login-item-1 {
+  margin-right: 40px;
+  color: whitesmoke;
+}
+
+.login-container #login-navigation .login-item-2 {
+  color: whitesmoke;
+  border: 2px solid white;
+}
+
+.banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("images/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg.jpg");
+  height: 500px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner figure img {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  height: 100px;
+  width: 100px;
+}
+
+.banner figure #banner-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 23px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  color: white;
+}
+
+.banner .search-restaurant {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner .search-restaurant input#search-rest {
+  width: 300px;
+}
+
+.banner .search-restaurant .search-btn {
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  padding: 0px 10px;
+  border: 2px solid white;
+}
+
+.banner .search-restaurant .search-btn:hover {
+  background: #da190b;
+}
+
+.container {
+  background-color: #ccfff5;
+}
+
+.collection-box img {
+  height: 60%;
+  width: 80%;
+}
+
+.collection-box .collection-text #collection-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.collection-box .collection-text #collection-image .card-body {
+  height: 70%;
+}
+
+.widget {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: cornsilk;
+}
+
+.widget input#search-del {
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.widget .detect-btn {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.widget .detect-btn:hover {
+  background-color: #46a049;
+}
+
+.widget .order-btn {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  background-color: #099E44;
+  color: #FFF;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.widget .order-btn:hover {
+  background-color: #46a049;
+}
+
+.categories .search-category .category-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.categories .search-category .category-list img {
+  height: 50px;
+  width: 50px;
+}
+
+.categories .search-category .category-list p {
+  display: inline;
+}
+
+.localities .locality-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.localities .locality-flex .locality-box1 .locality-list {
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.localities .locality-flex .locality-box2 .locality-list2 {
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.localities .locality-flex .locality-box3 .locality-list3 {
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+#zomato-app {
+  text-align: center;
+}
+
+#zomato-app #app-item1 {
+  padding: 40px;
+}
+
+#zomato-app #app-item1 img {
+  height: 350px;
+  width: 300px;
+}
+
+#zomato-app #app-item2 {
+  padding-left: 40px;
+}
+
+#zomato-app #app-item2 #app-body .detail-form #app-link-btn {
+  padding: 5px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#zomato-app #app-item2 #app-body .detail-form #app-link-btn:hover {
+  background-color: #46a049;
+}
+
+#zomato-app #app-item2 #app-body .detail-form #email-btn {
+  padding: 5px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#zomato-app #app-item2 #app-body .detail-form #email-btn:hover {
+  background-color: #46a049;
+}
+
+.figures ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+
+footer {
+  height: auto;
+}
+
+footer .footer-title {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-title .footer-title-img {
+  height: 70px;
+  width: 70px;
+}
+
+footer .footer-wrapper .footer-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-wrapper .footer-list .footer-list1 .footer-list-item1 {
+  list-style: none;
+}
+
+footer .footer-wrapper .footer-list .footer-list1 a {
+  color: white;
+}
+
+footer .footer-wrapper .footer-list .footer-list2 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+footer .footer-wrapper .footer-list .footer-list2 a {
+  color: white;
+}
+
+footer .footer-wrapper .footer-list .footer-list3 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  text-decoration: none;
+}
+
+footer .footer-wrapper .footer-list .footer-list3 a {
+  color: white;
+}
+
+footer .footer-wrapper .footer-list .footer-list4 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+footer .footer-wrapper .footer-list .footer-list4 a {
+  color: white;
+}
+
+footer .footer-wrapper .footer-list .footer-list4 .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer_reference {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer_reference .policies {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footer_reference .policies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer_reference .policies ul a {
+  color: white;
+}
+
+footer .footer_reference .social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .footer_reference .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer_reference .social ul li {
+  text-align: center;
+  font-size: x-small;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .head-item-2 ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .head-item-2 ul #nav_item_1 img {
+    height: 5px;
+    width: 2px;
+  }
+  .login-container #login-navigation {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  .banner {
+    position: relative;
+  }
+  .banner figure img {
+    text-align: center;
+    position: absolute;
+    left: 35%;
+  }
+  .banner figure #banner-text {
+    text-align: center;
+    font-weight: 600 !important;
+    margin: 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+  }
+  .banner .search-restaurant {
+    padding-top: 80px;
+  }
+  .banner .search-restaurant #dropdownMenuButton {
+    margin-top: 10px;
+  }
+  .banner .search-restaurant #search-rest {
+    margin-top: 10px;
+  }
+  .banner .search-restaurant .search-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+  }
+  .widget {
+    margin: auto;
+  }
+  .collection-box {
+    margin: auto;
+  }
+  .collection-box .collection-text .collection-image img {
+    height: 200px;
+    width: 200px;
+  }
+  .categories .search-category .category-list {
+    padding: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .localities .locality-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #zomato-app #app-item1 img {
+    height: 100px;
+    width: 100px;
+  }
+  .figures ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer {
+    height: auto;
+  }
+  footer .footer-wrapper .footer-list .footer-list4 .country {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer_reference .policies ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer_reference .social ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
