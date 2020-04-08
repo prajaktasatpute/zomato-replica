@@ -131,7 +131,7 @@
   width: 300px;
 }
 
-.banner .search-restaurant .search-btn {
+.banner .search-restaurant input#search-btn {
   border-radius: 5px;
   background-color: #f44336;
   color: white;
@@ -140,7 +140,7 @@
   border: 2px solid white;
 }
 
-.banner .search-restaurant .search-btn:hover {
+.banner .search-restaurant #search-btn {
   background: #da190b;
 }
 
